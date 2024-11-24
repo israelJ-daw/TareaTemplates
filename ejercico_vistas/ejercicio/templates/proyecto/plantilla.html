@@ -1,7 +1,7 @@
 <div>
-    <h2>Nombre: {{proyecto.nombre}}</h2>
+    <h2>Nombre: {{proyecto.nombre|center:"15"}}</h2>
     <h2>Descripcion: {{proyecto.descripcion}}</h2>
-    <h2>Duracion estimada: {{proyecto.duracion_estimada}}</h2>
+    <h2>Duracion estimada: {{proyecto.duracion_estimada|time:"H:i"}}</h2>
     <h2>Fecha inicio: {{proyecto.fecha_inicio}}</h2>
     <h2>Fecha fin: {{proyecto.fecha_fin}}</h2>
     <h2>Creador: {{proyecto.creador.nombre}}
@@ -10,7 +10,7 @@
     <h2>Colaboradores</h2>
     <ul>
         {% for usuario in proyecto.colaboradores.all %}
-            <li>Usuario: {{usuario.nombre}}</li>
+            <li>Usuario: {{usuario.nombre|linenumbers }}</li>
             
         {%endfor%}
     </ul>
@@ -18,7 +18,7 @@
     <h2>Tareas</h2>
     <ul>
         {% for tarea in proyecto.proyecto_tareas.all %}
-            <li>Tarea: {{tarea.titulo}}</li>
+            <li>Tarea: {{tarea.titulo|title }}</li>
         {%endfor%}
     </ul>
     

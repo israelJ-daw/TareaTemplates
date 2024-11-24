@@ -1,6 +1,6 @@
 <div>
     <h2>Id_Tarea: {{tarea.id}}</h2>
-    <h2>Título: {{tarea.titulo}}</h2>
+    <h2>Título: {{tarea.titulo | default:"No hay nada"}}</h2>
     <h2>Descripcion: {{tarea.descripcion}}</h2>
     <h2>Prioridad: {{tarea.prioridad}}</h2>
     <h2>Estado: {{tarea.get_estado_display}}</h2>

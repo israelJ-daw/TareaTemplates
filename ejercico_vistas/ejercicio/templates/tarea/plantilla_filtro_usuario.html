@@ -5,7 +5,7 @@
     <h2>Prioridad: {{tarea.prioridad}}</h2>
     <h2>Estado: {{tarea.get_estado_display}}</h2>
     <h2>Completada: {{tarea.get_completada_display}}</h2>
-    <h2>Fecha Creacion: {{tarea.fecha_creacion}}</h2>
+    <h2>Fecha Creacion: {{tarea.fecha_creacion| timesince}}</h2>
     <h2>Hora vencimiento: {{tarea.hora_vencimiento}}</h2>
     
     <h2>Creador: {{tarea.creador.nombre}}</h2>
@@ -13,14 +13,14 @@
     <h2>Usuarios Asignados</h2>
     <ul>
         {% for usuario in tarea.usuarios_asignados.all%}
-            <li>Usuario: {{usuario.nombre}}</li>
+            <li>Usuario: {{usuario.nombre|upper }}</li>
         {%endfor%}
     </ul>
 
     <h2>Etiquetas</h2>
     <ul>
         {% for etiqueta in tarea.etiquetas_tareas.all%}
-            <li>Etiqueta: {{etiqueta.nombre}}</li>
+            <li>Etiqueta: {{etiqueta.nombre| lower}}</li>
         {%endfor%}
     </ul>
 

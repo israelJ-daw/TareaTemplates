@@ -1,7 +1,7 @@
 {% extends "principal.html" %}
     {%block contenido%}
 
-        <h1>Proyecto: {{ proyecto.nombre }}</h2>
+        <h1>Proyecto: {{ proyecto.nombre|cut:" " }}</h2>
 
         <h1>Etiquetas</h1>
         {% for etiqueta in etiquetas %}

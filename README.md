@@ -1,1 +1,1 @@
-# templates tag diferentes block endblock for endfor empty extends include if else endif
+# Templates tag usados: | timesince |date :"d-m-Y" |  title   | upper  | lower |capfirst cut:" " |linenumbers |center:"15"  |title || default:"No hay nada"

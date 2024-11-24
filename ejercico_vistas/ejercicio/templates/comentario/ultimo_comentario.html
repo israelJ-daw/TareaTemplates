@@ -9,7 +9,7 @@
             <h3>Nombre: {{comentario.autor.nombre}}</h2>
             <h3>email: {{comentario.autor.email}}</h2>
             <h3>Password: {{comentario.autor.password}}</h2>
-            <h3>Fecha registro: {{comentario.autor.fecha_registro}}</h2>
+            <h3>Fecha registro: {{comentario.autor.fecha_registro|date:"d-m-Y"}}</h2>
         </div>
         <h2>Comentario: {{comentario.contenido}}</h2> 
     {%else%}
