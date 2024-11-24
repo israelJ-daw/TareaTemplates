@@ -1,0 +1,9 @@
+{% extends "principal.html" %}
+{%block contenido%}
+            <h2>Tarea: {{ tarea.titulo }}</h2>
+
+            {% for usuario in usuarios %}
+            {% include "usuario/plantilla_lista_completa.html" %}
+                
+            {% endfor %}
+        {%endblock%}

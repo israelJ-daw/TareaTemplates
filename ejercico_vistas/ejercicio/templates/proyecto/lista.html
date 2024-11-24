@@ -1,0 +1,9 @@
+{% extends "principal.html" %}
+        {%block contenido%}
+        <h1>Proyectos</h1>
+                {% for proyecto in proyectos %}
+                {% include "proyecto/plantilla.html" %}
+                {% endfor %}
+
+        <!--hacer esto es todos los templates-->
+        {%endblock%}        

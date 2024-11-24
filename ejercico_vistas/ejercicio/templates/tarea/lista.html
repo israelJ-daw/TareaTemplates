@@ -1,0 +1,11 @@
+{% extends "principal.html" %}
+        {%block contenido%}
+        <h2>Proyecto: {{ proyecto.nombre }}</h2>
+
+                {% for tarea in tareas %}
+                        {% include "tarea/plantilla_lista.html" %}   
+                
+                        {%empty%}
+                                <h1>No hay nada</h1>
+                        {% endfor %}
+        {% endblock %} 

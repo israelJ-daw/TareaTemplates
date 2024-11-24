@@ -1,0 +1,10 @@
+{% extends "principal.html" %}
+    {%block contenido%}
+        <h1>Usuario: {{ usuario.nombre }}</h2>
+        <h1>Tareas</h1>
+        {% for tarea in tareas %}
+                {% include "tarea/plantilla_filtro_usuario.html" %}
+           
+
+            {% endfor %}
+        {%endblock%}

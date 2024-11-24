@@ -1,0 +1,29 @@
+
+<h1>GESTIÓN DE PROYECTOS</h1>
+
+    <h2>Listado de enlaces</h2>
+        <ul>
+
+        <li><a href="{% url 'listar_proyectos' %}">URL ejercicio 2</a></li>
+    
+        <li><a href="{% url 'listar_tareas_proyecto' 1 %}">URL ejercicio 3</a></li>
+    
+        <li><a href="{% url 'listar_usuarios_tarea' 1%}">URL ejercicio 4</a></li>
+    
+        <li><a href="{% url 'listar_tareas_texto_usuario' 12 'prueba' %}">URL ejercicio 5</a></li>
+   
+        <li><a href="{% url 'listar_tareas_anyos' 2023 2024 %}">URL ejercicio 6</a></li>
+   
+        <li><a href="{% url 'ultimo_comentario_proyecto' 1 %}">URL ejercicio 7</a></li>
+    
+        <li> <a href="{% url 'listar_comentarios_filtro' 1 2023 'prueba' %}">URL ejercicio 8</a></li>
+    
+        <li><a href="{% url 'listar_etiquetas_proyecto' 1 %}">URL ejercicio 9</a></li>
+   
+        <li><a href="{% url 'usuarios_no_asignados' %}">URL ejercicio 10</a></li>
+
+        <li><a href="{% url 'usuarios_no_asignados' %}">URL ejercicio 11</a></li>
+   
+        <li><a href="{% url 'usuarios_no_asignados' %}">URL ejercicio 12</a></li>
+        
+        </ul>

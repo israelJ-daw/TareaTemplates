@@ -1,0 +1,7 @@
+{% extends "principal.html" %}
+            {%block contenido%}
+            {% for usuario in usuarios %}
+            {% include "usuario/plantilla_lista_completa_no_asignados.html" %}
+               
+            {% endfor %}
+{%endblock%}

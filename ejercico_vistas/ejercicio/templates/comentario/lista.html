@@ -1,0 +1,11 @@
+{% extends "principal.html" %}
+    {%block contenido%}
+  
+        <h1>Tarea: {{ tarea.titulo }}</h2>
+
+        <h1>Comentarios</h1>
+        {% for comentario in comentarios %}
+          {% include "comentario/plantilla_lista3.html" %}
+        
+            {% endfor %}
+    {%endblock%}    
